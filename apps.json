@@ -12,6 +12,14 @@
       "iconURL": "https://ar-agencia-ia.github.io/aurora-releases/icon.png",
       "versions": [
         {
+          "version": "0.25.0",
+          "buildVersion": "17",
+          "date": "2026-09-07",
+          "downloadURL": "https://github.com/ar-agencia-ia/aurora-releases/releases/download/v0.25.0/aurora.ipa",
+          "size": 48375607,
+          "localizedDescription": "### Added\n- Source AltStore/SideStore (`ar-agencia-ia/aurora-releases`): `codemagic.yaml`/`bitrise.yml`\n  publicam automaticamente cada build de release na Source — instala/atualiza direto do\n  AltStore/SideStore sem buscar artifact manual (spec 010/#350).\n- Tela Estatísticas sinaliza (badge neutro acima do heatmap) quando o dado exibido pode estar\n  parcialmente sincronizado — evita percentual de adesão enganoso em aparelho recém-logado com\n  sincronização ainda em andamento; some sozinha assim que a sincronização confirma (#358).\n- `codemagic.yaml`: novo workflow `android-appbundle`, gera o `.aab` de release Android — só o\n  artifact, sem publicação automática no Play Console nesta entrega (workflow iOS intacto) (#319).\n- Sincronização multi-dispositivo (assinantes Premium): Painel do dia, Silêncio, Afirmações,\n  Leitura e Perfil sincronizam automaticamente entre aparelhos logados na mesma conta — sem tela\n  ou indicador novo (100% em segundo plano). Conflito resolvido por \"mais recente vence\"\n  (config/estado) ou união (sessões); primeiro sync/aparelho novo funde dado sem perder nada;\n  assinatura expirada congela sync sem apagar dado local; troca de conta no mesmo aparelho limpa\n  o dado local anterior, com confirmação (issue-pai #303).\n- Assinatura Premium (Google Play Billing): comparação de planos (Free/Premium mensal/anual) e\n  fluxo de assinatura na aba Compras (#304); cancelamento com acesso mantido até o fim do ciclo\n  já pago, sem reembolso (#305); compra de crédito-IA avulso, debitado só depois do crédito do\n  plano se esgotar (#306); troca de ciclo mensal↔anual agendada pra próxima renovação, sem\n  cobrança imediata (#307); downgrade automático pra Free em falha de cobrança ou\n  revogação/reembolso, com notificação (#308); exclusão de conta com assinatura ativa —\n  cancela no Play Billing antes de apagar os dados, sem bloqueio pro usuário (#309). Backend\n  via RPCs idempotentes por `google_play_purchase_token` + Edge Function `google-play-rtdn`\n  (Real"
+        },
+        {
           "version": "0.24.0",
           "buildVersion": "4",
           "date": "2026-09-07",
