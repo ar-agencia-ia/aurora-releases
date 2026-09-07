@@ -1,0 +1,16 @@
+{
+  "name": "Aurora Source",
+  "identifier": "com.aleobons.aurora.source",
+  "sourceURL": "https://ar-agencia-ia.github.io/aurora-releases/apps.json",
+  "apps": [
+    {
+      "name": "Aurora",
+      "bundleIdentifier": "com.aleobons.aurora.aurora",
+      "developerName": "Alexandre Leobons Souza",
+      "subtitle": "Rituais matinais para uma vida com mais leveza",
+      "localizedDescription": "Aurora \u2014 app de rituais matinais (sil\u00eancio, leitura, afirma\u00e7\u00f5es).",
+      "iconURL": "https://ar-agencia-ia.github.io/aurora-releases/icon.png",
+      "versions": []
+    }
+  ]
+}
