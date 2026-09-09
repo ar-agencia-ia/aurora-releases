@@ -8,7 +8,7 @@
       "bundleIdentifier": "com.aleobons.aurora.aurora",
       "developerName": "Alexandre Leobons Souza",
       "subtitle": "Rituais matinais para uma vida com mais leveza",
-      "localizedDescription": "Aurora — app de rituais matinais (silêncio, leitura, afirmações).",
+      "localizedDescription": "Aurora — app de rituais matinais (silêncio, leitura, afirmações, diário).",
       "iconURL": "https://ar-agencia-ia.github.io/aurora-releases/icon.png",
       "versions": [
         {
@@ -17,7 +17,7 @@
           "date": "2026-09-09",
           "downloadURL": "https://github.com/ar-agencia-ia/aurora-releases/releases/download/v0.26.1/aurora.ipa",
           "size": 49875631,
-          "localizedDescription": "Release v0.26.1"
+          "localizedDescription": "### Added\n- Diário (Scribing): entrada de texto livre diária (título opcional, corpo rico com\n  negrito/itálico/listas), autosave automático, busca por palavra-chave, navegação por\n  calendário, card \"Neste dia\" (entradas de anos anteriores no mesmo dia), histórico e\n  estatísticas de sequência de dias com entrada, e geração de trajetória/insights via IA a\n  partir de um período escolhido.\n\n### Fixed\n- Diálogo de confirmação ao desmarcar um item do checklist do Painel do Dia estava hardcoded\n  pro módulo Leitura — agora cobre Diário também, com mensagem genérica."
         },
         {
           "version": "0.25.0",
