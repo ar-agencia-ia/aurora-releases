@@ -12,6 +12,14 @@
       "iconURL": "https://ar-agencia-ia.github.io/aurora-releases/icon.png",
       "versions": [
         {
+          "version": "0.27.3",
+          "buildVersion": "21",
+          "date": "2026-09-15",
+          "downloadURL": "https://github.com/ar-agencia-ia/aurora-releases/releases/download/v0.27.3/aurora.ipa",
+          "size": 47547725,
+          "localizedDescription": "## [0.27.3] - 2026-09-15\n\n### Fixed\n\n- Diário (spec 012, regressão de produção): onUpgrade de schema quebrava o boot pra quem\n  estava em from == 17 (Diário já existia, sem a coluna origem ainda) — addColumn(origem)\n  rodava DEPOIS de _migrarDateTimeParaTexto (#347), que faz TableMigration genérico usando a\n  definição ATUAL da tabela (já com origem) pra copiar da física antiga, sem origem —\n  SqliteException (\"no such column: origem\") dentro da transação, tela \"Não foi possível abrir\n  o banco de dados local\" no boot. Achado via Sentry (device real, iPhone) + leitura direta do\n  onUpgrade — mesma classe do bug-740, uma camada adiante. Migração roda em transação: dado do\n  usuário nunca foi perdido/corrompido, só travava o boot. Fix: addColumn(origem) agora roda\n  ANTES de _migrarDateTimeParaTexto. Regressão coberta por teste novo (fixture v17 mínima).\n\n## [0.27.2] - 2026-09-15\n\n### Security\n\n- Afirmações (#191, follow-up do achado MEDIUM/PR #458): resíduo em texto plano do rascunho de\n  geração por IA deixado em SharedPreferences por instalações anteriores à migração pra\n  flutter_secure_storage agora é apagado na 1ª leitura pós-migração. AppPreferences ganhou\n  remove(String key).\n\n## [0.27.1] - 2026-09-15\n\n### Fixed\n\n- codemagic.yaml (ios-altstore-sideload): teto de truncamento do changelog agregado pro\n  What's New da Source subiu de 6000 pra 20000 caracteres — v0.26.1→v0.27.0 sozinho já agregou\n  ~9700 caracteres (9 versões acumuladas, build iOS manual), cortando metade do texto real\n  (achado do usuário testando a v0.27.0 publicada, mesma classe do fix já feito em 0.26.3/0.26.4).\n  Fix retroativo aplicado direto no apps.json da Source (fora deste repo) pra v0.27.0."
+        },
+        {
           "version": "0.27.0",
           "buildVersion": "20",
           "date": "2026-09-15",
