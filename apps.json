@@ -12,6 +12,14 @@
       "iconURL": "https://ar-agencia-ia.github.io/aurora-releases/icon.png",
       "versions": [
         {
+          "version": "0.27.4",
+          "buildVersion": "22",
+          "date": "2026-09-15",
+          "downloadURL": "https://github.com/ar-agencia-ia/aurora-releases/releases/download/v0.27.4/aurora.ipa",
+          "size": 47546187,
+          "localizedDescription": "## [0.27.4] - 2026-09-15\n\n### Fixed\n\n- Diário (spec 012, importação CSV — 3 achados do usuário testando um export real de 3033\n  linhas, app Diarium/Day One): voltar da tela \"Mapear colunas\" exigia 2 toques (1º parecia não\n  fazer nada) — selecionarArquivo() fazia 2 transições de estado em sequência, e a navegação por\n  ref.listen da tela 1 disparava uma vez por transição, empilhando a mesma rota 2x; agora é 1\n  transição só. Dropdown de formato de data sumia pra sempre depois de escolhido 1x (inclusive\n  voltando de \"Editar mapeamento\"), sem jeito de corrigir uma escolha errada — agora fica sempre\n  visível quando há coluna de data mapeada, pré-selecionado no valor já assumido.\n\n### Added\n\n- Diário (spec 012, importação CSV): novo formato de data reconhecido automaticamente —\n  dia + mês por extenso em português + ano (+ hora opcional), ex. \"15 setembro 2026 06:13:36\"\n  (export comum de apps de diário como Diarium/Day One). Sem ambiguidade possível (nome do mês já\n  desambigua dia/mês), entra direto na detecção automática (FR-005), não só como opção manual."
+        },
+        {
           "version": "0.27.3",
           "buildVersion": "21",
           "date": "2026-09-15",
