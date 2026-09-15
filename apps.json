@@ -12,6 +12,14 @@
       "iconURL": "https://ar-agencia-ia.github.io/aurora-releases/icon.png",
       "versions": [
         {
+          "version": "0.27.6",
+          "buildVersion": "23",
+          "date": "2026-09-15",
+          "downloadURL": "https://github.com/ar-agencia-ia/aurora-releases/releases/download/v0.27.6/aurora.ipa",
+          "size": 47551071,
+          "localizedDescription": "## [0.27.6] - 2026-09-15\n\n### Added\n\n- Diário (spec 012, importação CSV — achados de 2 rodadas de /impeccable critique, 26/40 e\n  22/40): indicador de etapa (\"Etapa N de 4\") nas 3 primeiras telas do wizard; legenda \"Mostrando\n  as 10 primeiras de N linhas\" na prévia quando o CSV tem mais de 10 linhas; mensagem de reforço\n  na tela de resultado quando ao menos 1 entrada foi importada.\n\n### Changed\n\n- Diário (spec 012, importação CSV): prévia agora mostra a data já **interpretada** (formato\n  padrão do app, ex. \"31/01/2024 00:00\") em vez do texto bruto da coluna do CSV — dava falsa\n  confiança de que o formato assumido estava certo sem nenhum sinal real de erro; valor que não\n  parseia agora mostra \"Data inválida\" em destaque. Link \"Editar mapeamento\" virou \"Editar colunas\n  mapeadas\" e saiu de dentro da linha de formato de data (sugeria que só corrigia data — na real\n  edita título/corpo/data também). Botão \"Desfazer importação\" encurtado pra \"Desfazer\" (evitava\n  quebra de linha no rodapé) e ganhou diálogo de confirmação antes de excluir o lote — apagar\n  milhares de entradas nunca deveria ser 1 toque sem confirmação. Linha de sucesso do resumo final\n  ganhou mais peso visual (ícone maior, negrito) que as duas confirmações de zero.\n\n### Fixed\n\n- Diário (spec 012, importação CSV): mensagem de erro ao falhar a gravação agora é própria do\n  fluxo (antes reaproveitava uma string genérica de outra tela, sem contexto de importação).\n\n## [0.27.5] - 2026-09-15\n\n### Fixed\n\n- Diário (spec 012, importação CSV — achado do usuário no mesmo teste real de 3033 linhas):\n  terminar o mapeamento manual na tela 2 pulava direto pra prévia, sem precisar tocar\n  \"Continuar\". Causa: SelecionarArquivoCsvScreen (tela 1) fica viva embaixo na pilha de rotas\n  (go_router não a descarta ao dar push) o resto do wizard — seu ref.listen continuava\n  ativo e disparava de novo em QUALQUER mudança de estado subsequente com arquivo presente,\n  inclusive terminar o mapeamento manual (que faz mapeamento.pronto virar true), empurrando\n  um 2º push por cima. Fix: o listener só reage à transição exata \"arquivo apareceu\"\n  (anterior?.arquivo == null), não a qualquer estado com arquivo já presente."
+        },
+        {
           "version": "0.27.4",
           "buildVersion": "22",
           "date": "2026-09-15",
