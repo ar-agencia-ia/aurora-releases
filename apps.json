@@ -12,6 +12,14 @@
       "iconURL": "https://ar-agencia-ia.github.io/aurora-releases/icon.png",
       "versions": [
         {
+          "version": "0.31.2",
+          "buildVersion": "71",
+          "date": "2026-10-04",
+          "downloadURL": "https://github.com/ar-agencia-ia/aurora-releases/releases/download/v0.31.2/aurora.ipa",
+          "size": 86754457,
+          "localizedDescription": "## [0.31.2] - 2026-10-02\n\n### Fixed\n\n- Sincronização: dados semeados no primeiro uso (perfil, rotina, histórico) deixam de sobrescrever\n  o que já existe na nuvem, e o pull de sessões de Exercício com distância e calorias deixa de\n  falhar.\n- Painel do dia, Silêncio, Afirmações e Diário: desmarcar o dia agora apaga todas as sessões do\n  dia e atualiza as telas; leituras ignoram registros excluídos; retomar o Silêncio sem pausa não\n  reinicia o som ambiente.\n- Telas de Afirmações, Diário, Leitura, Perfil e Assinatura mostram erro com \"tentar de novo\" em\n  vez de lista vazia ou \"0 créditos\"; ativar a biblioteca em paralelo não duplica mais listas.\n- Lembrete diário: notificação privada na tela de bloqueio e recuperação de ícone inválido.\n\n### Changed\n\n- Diálogos de confirmação, selo de status, largura máxima das telas largas e raio dos gráficos\n  passam a usar componentes e tokens únicos; o PDF de notas ganha rodapé de exportação; o\n  assistente de importação CSV sempre passa pela etapa Mapear e numera as 4 etapas.\n- Revisão de design das telas: erro de carregamento com botão \"Tentar de novo\" e sem vermelho,\n  confirmações com verbo claro (excluir afirmação, lista e conta), Gerenciar assinatura sem tela em\n  branco, aviso ao sair da importação CSV, AppBar do Diário com uma ação fixa, decimais com vírgula\n  em Leitura, legenda no heatmap e no gráfico de minutos por dia.\n- Interno: tabelas do banco movidas para lib/core/database/tables/; Dependabot configurado.\n\n## [0.31.1] - 2026-10-01\n\n### Changed\n\n- Interno: a skill tlc-spec-lean passa a ser versionada no repositório. Sem mudança no app."
+        },
+        {
           "version": "0.31.0",
           "buildVersion": "68",
           "date": "2026-10-01",
