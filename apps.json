@@ -12,6 +12,14 @@
       "iconURL": "https://ar-agencia-ia.github.io/aurora-releases/icon.png",
       "versions": [
         {
+          "version": "0.32.0",
+          "buildVersion": "76",
+          "date": "2026-10-09",
+          "downloadURL": "https://github.com/ar-agencia-ia/aurora-releases/releases/download/v0.32.0/aurora.ipa",
+          "size": 103946814,
+          "localizedDescription": "Release v0.32.0"
+        },
+        {
           "version": "0.31.2",
           "buildVersion": "71",
           "date": "2026-10-04",
