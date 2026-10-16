@@ -12,6 +12,14 @@
       "iconURL": "https://ar-agencia-ia.github.io/aurora-releases/icon.png",
       "versions": [
         {
+          "version": "0.37.1",
+          "buildVersion": "97",
+          "date": "2026-10-16",
+          "downloadURL": "https://github.com/ar-agencia-ia/aurora-releases/releases/download/v0.37.1/aurora.ipa",
+          "size": 104040655,
+          "localizedDescription": "## [0.37.1] - 2026-10-16\n\n### Changed\n\n- Interno: a rota da política de privacidade passa a ter uma constante só, usada pelo roteador, pelo Perfil e pela intent do Health Connect. O calendário do Diário usa o mesmo locale na grade e no título do mês. Sem mudança visível no app.\n\n## [0.37.0] - 2026-10-14\n\n### Changed\n\n- Sessões (#740, #743, #745, #746, #747): a Leitura conta em número aberto, a Visualização usa o anel compartilhado e o Exercício pausa por ícone e encerra segurando. Pausar e encerrar são ícones colados ao relógio (presos na base só em tela baixa). A Leitura também encerra segurando. Na Visualização e no Silêncio o ícone de parar se chama \"Sair\", porque ali a saída não grava a sessão. A Visualização passa a contar o tempo para baixo, como o Silêncio, e o anel cresce junto com a fonte do sistema. Com fonte grande, os botões ficam perto do relógio em vez de presos na base, e o tempo do anel escurece ao pausar. O título do livro na Leitura quebra em até 2 linhas.\n- Tela ligada (#748): a preferência passa a valer também na Leitura e no Exercício, e continua desligada até a pessoa pedir.\n- Health Connect (#738): a tela de uso da permissão abre a política de privacidade. Só a action da intent entra no app; os extras ficam de fora.\n- Cabeçalhos (#731): os títulos de seção são anunciados como cabeçalho. O estado Contando/Pausado do Exercício fica de fora, porque muda a cada pausa.\n- Interno (#761): os testes de integração usam os helpers únicos, sem cópia local.\n\n### Fixed\n\n- Trocar de aba no meio da Leitura pede confirmação, como no Silêncio, e a contagem pára enquanto o diálogo está aberto.\n- O trilho do anel usa outlineVariant (surfaceContainerHighest nos temas de alto contraste), para não sumir contra o fundo, e o total dentro do anel encolhe junto com o tempo. No iPhone, o swipe da borda abre a mesma confirmação de saída."
+        },
+        {
           "version": "0.36.1",
           "buildVersion": "93",
           "date": "2026-10-13",
