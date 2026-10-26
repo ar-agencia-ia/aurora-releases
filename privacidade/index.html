@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de privacidade — Aurora</title>
+<style>
+:root{color-scheme:light dark;--bg:#fff;--fg:#1d1b20;--mut:#5f5b66}
+@media (prefers-color-scheme:dark){:root{--bg:#141218;--fg:#e6e0e9;--mut:#a9a3b0}}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,sans-serif}
+main{max-width:42rem;margin:0 auto;padding:1.5rem 1rem 4rem}
+h1{font-size:1.6rem}h2{font-size:1.15rem;margin-top:2rem}
+p,li{margin:.5rem 0}.mut{color:var(--mut)}
+</style>
+</head>
+<body>
+<main>
+<h1>Política de privacidade do Aurora</h1>
+<p class="mut">Última atualização: 26 de outubro de 2026</p>
+<p>O Aurora é um aplicativo Android de práticas diárias (silêncio, afirmações, leitura, diário, exercício e visualização). Este documento explica quais dados o app trata, para quê, e como você exerce seus direitos. Responsável: Alexandre Leobons Souza.</p>
+
+<h2>1. Dados que ficam no seu aparelho</h2>
+<p>Suas práticas, notas, entradas de diário, afirmações, leituras, exercícios e configurações ficam salvas no aparelho, cifradas. Sem criar conta, nada disso sai do aparelho.</p>
+
+<h2>2. Conta e login</h2>
+<p>Se você entrar com o Google, tratamos seu identificador de conta, nome, e-mail e foto, fornecidos pelo Google, para autenticar você e identificar sua assinatura e seus créditos. Esses dados ficam no nosso backend (Supabase).</p>
+
+<h2>3. Sincronização entre aparelhos (Premium)</h2>
+<p>Se você é assinante Premium, suas práticas e seus textos sincronizam com o nosso backend para aparecerem nos aparelhos da sua própria conta. Só você tem acesso; nunca são compartilhados com outros usuários.</p>
+
+<h2>4. Recursos de IA</h2>
+<p>Ao usar "Gerar com IA", o texto que você fornece é enviado a um provedor de modelos de linguagem (OpenRouter) para gerar a resposta. Pedimos ao provedor retenção zero de dados e que não use o conteúdo para treinamento.</p>
+<p>Para medir a qualidade das gerações, enviamos ao Langfuse (Estados Unidos) apenas metadados de uso (operação, versão do critério, modelo, tempo, tokens, custo e resultado), ligados a um identificador anônimo da conta. Se você ligar "Compartilhar textos da IA para melhoria" no Perfil, o Langfuse também recebe o texto que você fornece e a resposta da IA. Você pode desligar quando quiser, mas o que já foi enviado pode continuar no Langfuse mesmo depois de desligar ou de excluir a conta.</p>
+
+<h2>5. Health Connect (exercício)</h2>
+<p>Durante uma sessão de exercício, o app lê passos, distância, calorias ativas e frequência cardíaca do Health Connect, só entre o início e o fim da sessão. As métricas ficam salvas junto com a sessão, no aparelho, cifradas. O Aurora nunca escreve dados no Health Connect e nunca envia suas métricas de saúde para serviços de análise ou publicidade de terceiros. Você pode revogar a permissão em Configurações do Android &gt; Apps &gt; Aurora &gt; Permissões, ou em Health Connect &gt; Apps com acesso.</p>
+
+<h2>6. Relatórios de erro e uso</h2>
+<p>Usamos o Sentry para receber relatórios de falha, com remoção de dados sensíveis antes do envio, e o PostHog para liberar funcionalidades de forma gradual (sinalizadores de funcionalidade). Esses serviços recebem dados técnicos do app e do aparelho, e um identificador de conta, não o conteúdo das suas práticas.</p>
+
+<h2>7. Compras</h2>
+<p>Assinaturas e créditos avulsos são processados pelo Google Play. Não recebemos os dados do seu cartão. Recebemos do Google Play a confirmação da compra para liberar o benefício.</p>
+
+<h2>8. Publicidade</h2>
+<p>O Aurora não exibe anúncios, não usa ID de publicidade e não vende seus dados.</p>
+
+<h2>9. Seus direitos e exclusão de dados</h2>
+<p>Você pode excluir sua conta e os dados associados a ela no app, em Perfil &gt; Excluir conta. Também pode pedir acesso, correção ou exclusão dos seus dados escrevendo para o contato abaixo, conforme a Lei Geral de Proteção de Dados (Lei 13.709/2018).</p>
+
+<h2>10. Crianças</h2>
+<p>O Aurora é destinado a maiores de 18 anos e não coleta intencionalmente dados de menores.</p>
+
+<h2>11. Alterações</h2>
+<p>Se esta política mudar, a data acima será atualizada e, em mudanças relevantes, avisaremos no app.</p>
+
+<h2>12. Contato</h2>
+<p>Alexandre Leobons Souza — <a href="mailto:aleobons@gmail.com">aleobons@gmail.com</a></p>
+</main>
+</body>
+</html>
