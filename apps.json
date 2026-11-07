@@ -12,6 +12,14 @@
       "iconURL": "https://ar-agencia-ia.github.io/aurora-releases/icon.png",
       "versions": [
         {
+          "version": "0.52.1",
+          "buildVersion": "447683",
+          "date": "2026-11-07",
+          "downloadURL": "https://github.com/ar-agencia-ia/aurora-releases/releases/download/v0.52.1/aurora.ipa",
+          "size": 105022675,
+          "localizedDescription": "## [0.52.1] - 2026-11-07\n\n### Changed\n\n- Interno (#754, parte da #602): as telas Sessão (com o diálogo de sessão esquecida), Resumo e a home de Exercício passam a ser testadas no app real (integration_test/exercicio_{sessao,resumo,tela}_fluxo_test.dart). 46 casos saem dos testes de widget; os que dependem de override, erro injetado, geometria ou do diálogo de permissão do sistema ficam. Cobertura de linha sem perda e 12 mutantes manuais mortos (dois só depois de reforçar o teste). O app não muda.\n- Interno (#901, #1060 a #1065): core/ deixa de importar features/ (sessão, áudio, guard de saída, formatação de duração e motor de sync passam a usar portas em core/), o Painel do dia ganha porta única para prática concluída e ContaRepository vira dono único da conta. O app não muda.\n- Interno (#754, parte da #602): a tela Estatísticas de exercício passa a ser testada no app real (integration_test/exercicio_estatisticas_fluxo_test.dart): ordem do catálogo, seleção e troca de tipo, escala do gráfico, grade de duas colunas, limpeza e exclusão do histórico. 20 casos saem do teste de widget (58 para 38), os que dependem de relógio, override ou erro injetado ficam. Cobertura de linha sem perda; 5 mutantes manuais mortos (um deles só depois de reforçar uma asserção que já era fraca no teste de widget original). As telas Sessão, Resumo e exercício seguem como estão. O app não muda."
+        },
+        {
           "version": "0.52.0",
           "buildVersion": "446581",
           "date": "2026-11-07",
