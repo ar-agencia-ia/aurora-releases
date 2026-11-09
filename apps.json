@@ -12,6 +12,14 @@
       "iconURL": "https://ar-agencia-ia.github.io/aurora-releases/icon.png",
       "versions": [
         {
+          "version": "0.53.0",
+          "buildVersion": "449346",
+          "date": "2026-11-09",
+          "downloadURL": "https://github.com/ar-agencia-ia/aurora-releases/releases/download/v0.53.0/aurora.ipa",
+          "size": 104931924,
+          "localizedDescription": "## [0.53.0] - 2026-11-08\n\n### Added\n\n- Biblioteca de afirmações (#1078): cada item ganha o botão Criar minha versão, que abre o texto para editar e salvar como afirmação própria, escolhendo as listas onde ela entra. Vai a todos no release, sem flag de release.\n- Gerar afirmações com IA (#1102): antes de gerar, a tela explica como o tema e o contexto (motivo, ações e momento) orientam a IA, o que acontece quando o contexto fica em branco e como o texto enviado é tratado, com um diálogo acessível e linhas de apoio sob os campos.\n\n### Fixed\n\n- Visualização (#1099): o seletor de Âncora em Preparar mostra só as afirmações da lista ativa, com um toggle para ver as demais; afirmação de outra lista aparece com a origem e a selecionada fica fixada no topo com o rótulo \"Fora da lista mostrada\". Criar afirmação a partir do seletor devolve a nova como Âncora, e a citação da Âncora aparece em Preparar.\n- Silêncio (#1085): o chiado na emenda do loop de 7 sons ambiente foi corrigido; a Câmara das Sombras e a dos Murmúrios deixam de ter o degrau de nível na emenda. As faixas foram regeneradas por tool/emendar_ambiente_loop.py, que agora também confere burst, salto e degrau no --verificar.\n- Exercício (iOS, #1020): o seletor de apps de música consulta dois schemes para o Amazon Music (amazonmusic e amznmp3) e registra, só no log local, quando um app não é detectado. A causa raiz no iPhone ainda precisa ser confirmada com o Amazon Music instalado."
+        },
+        {
           "version": "0.52.1",
           "buildVersion": "447683",
           "date": "2026-11-07",
