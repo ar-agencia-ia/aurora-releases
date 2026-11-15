@@ -12,6 +12,14 @@
       "iconURL": "https://ar-agencia-ia.github.io/aurora-releases/icon.png",
       "versions": [
         {
+          "version": "0.58.3",
+          "buildVersion": "458938",
+          "date": "2026-11-15",
+          "downloadURL": "https://github.com/ar-agencia-ia/aurora-releases/releases/download/v0.58.3/aurora.ipa",
+          "size": 94336413,
+          "localizedDescription": "## [0.58.3] - 2026-11-15\n\n### Fixed\n\n- Compra avulsa de créditos-IA (#782): compra antiga reentregue pela loja não aparece mais como compra nova. A tela anota as compras já confirmadas ao abrir e só anuncia o que surgir além delas; se a leitura falha, não confirma nada e não chama a loja.\n- Compra avulsa de créditos-IA (#782): quem pagou e fechou o app vê o aviso de sucesso, com a quantidade certa, na próxima abertura da tela. A referência fica guardada no aparelho por 7 dias, presa à conta.\n\n### Changed\n\n- Compra avulsa de créditos-IA (#782): ao tocar em Comprar com uma compra já paga e ainda não avisada, a tela mostra o aviso dessa compra e não abre a loja naquele toque; para comprar de novo, toque outra vez.\n- CI: a regra passou a listar o que é do app, e só isso dispara flutter analyze/flutter test: lib/, test/, test_contrato/, integration_test/, test_driver/, assets/, android/, ios/, supabase/, tool/, pubspec.yaml (menos bump de version:), pubspec.lock, analysis_options.yaml, l10n.yaml, build.yaml, .tool-versions e os *.json de docs/. Todo o resto (.claude/, .specs/, loops/, automations/, .tlc/, memoria/, .gitignore, workflows, demais arquivos de docs/) pula a suíte. A lista vive em tool/docs_only.sh, com teste em tool/test_docs_only.sh, que roda no job analyze. A varredura de chave ElevenLabs versionada passa a rodar em todo PR (tool/check_chave_elevenlabs.sh), inclusive nos que pulam a suíte.\n\n## [0.58.2] - 2026-11-15\n\n### Changed\n\n- Rotina do Sentry: issues válidas seguem no lote mesmo quando uma candidata individual fica pendente; a captura completa é reconciliada com o manifesto processável e as pendências.\n\n## [0.58.1] - 2026-11-14\n\n### Changed\n\n- Operação (sem mudança no app): o código das rotinas do agente Aurora na VPS (monitor de gasto do OpenRouter, coleta semanal do Sentry e triagem diária) passa a ser versionado em automations/; antes existia só no disco da VPS. Estado, relatórios e recibos de cron continuam fora do git."
+        },
+        {
           "version": "0.58.0",
           "buildVersion": "456483",
           "date": "2026-11-14",
