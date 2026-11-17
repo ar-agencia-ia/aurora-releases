@@ -12,6 +12,14 @@
       "iconURL": "https://ar-agencia-ia.github.io/aurora-releases/icon.png",
       "versions": [
         {
+          "version": "0.60.2",
+          "buildVersion": "461663",
+          "date": "2026-11-17",
+          "downloadURL": "https://github.com/ar-agencia-ia/aurora-releases/releases/download/v0.60.2/aurora.ipa",
+          "size": 94334685,
+          "localizedDescription": "## [0.60.2] - 2026-11-17\n\n### Changed\n\n- Fábrica: a nuvem instala o Deno do .tool-versions no cloud_setup.sh; branch de lote não bumpa versão nem edita o CHANGELOG (fragmento em changelog.d/); o PR do dia roda dart format depois de juntar os lotes; a triagem pergunta ao gestor quando um critério depende de dado que ela não lê; as rotinas sabem quais variáveis de diagnóstico (Sentry, AI_MODEL) podem faltar na nuvem.\n\n### Fixed\n\n- dart format em estatisticas_exercicio_calculator.dart, que chegou à master fora do formato após a junção de dois lotes.\n\n## [0.60.1] - 2026-11-17\n\n### Changed\n\n- Fábrica: issue que volta pela 2ª vez com o mesmo bloqueio, sem resposta do gestor, sai da fila e espera o gestor (soltar --bloqueio), em vez de a rotina repetir a mesma execução."
+        },
+        {
           "version": "0.60.0",
           "buildVersion": "460813",
           "date": "2026-11-17",
