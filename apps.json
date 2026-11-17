@@ -12,6 +12,14 @@
       "iconURL": "https://ar-agencia-ia.github.io/aurora-releases/icon.png",
       "versions": [
         {
+          "version": "0.60.0",
+          "buildVersion": "460813",
+          "date": "2026-11-17",
+          "downloadURL": "https://github.com/ar-agencia-ia/aurora-releases/releases/download/v0.60.0/aurora.ipa",
+          "size": 94334898,
+          "localizedDescription": "## [0.60.0] - 2026-11-16\n\n### Added\n\n- Premium anual: a cota de 60 créditos de plano passa a ser reposta todo mês de serviço (job horário repor-cota-mensal-anual-horario), com a sobra do mês anterior vencendo em EXPIRA_PLANO no ledger; avulso e reservado não mudam (#970).\n\n### Fixed\n\n- **Abort nativo do Android passa a chegar atribuível no Sentry (#1038).** O build release do Android envia os símbolos de debug (Dart e nativos) ao Sentry, e o app fixa explicitamente as threads no evento, o NDK, o ANR e a sincronização de escopo. Falha no envio só avisa e não bloqueia a publicação. A correção do crash em si depende de um evento já simbolizado.\n- Aceite de privacidade: quando o servidor recusa o sync, o app confere o aceite no servidor em vez de confiar no cache local, e a tela de aceite volta se faltar (#1070).\n- Sync: o cursor de pull parte do início do pull, não do fim; um primeiro sync longo não deixa mais de fora linhas gravadas por outro aparelho nesse intervalo (#1070).\n- A compra de créditos avulsos respeita o desligamento de emergência no próprio repositório, e não só na tela (CR-1009, #1191).\n- **Sessões de Exercício feitas à noite contam no dia certo (#1205).** O app lia os horários das sessões em UTC; em UTC-3, treino às 21h ou depois caía no dia seguinte nas estatísticas, na sequência e ao excluir as sessões de um dia. Agora a leitura converte para o horário do aparelho, como Silêncio, Leitura e Visualização.\n- **Excluir uma sessão de leitura agora recalcula a página atual do livro (#1206).** Ao excluir uma sessão (ou todas as de um dia), o livro passa a mostrar a página da sessão mais recente que sobrou no ciclo atual. Sem sessões com página, volta à página inicial (ou 0 após Reler). Status e data de conclusão não mudam.\n\n## [0.59.2] - 2026-11-16\n\n### Changed\n\n- A memória registra o upload automático da mídia aprovada de Feed/carrossel antes da publicação via Graph API.\n\n## [0.59.1] - 2026-11-16\n\n### Changed\n\n- Memória do projeto registra o acesso ao container do OpenClaw e o hook de versão que dispara em PRs de outros repositórios."
+        },
+        {
           "version": "0.59.0",
           "buildVersion": "459926",
           "date": "2026-11-16",
